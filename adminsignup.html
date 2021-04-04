@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8">
+	<link href="img/favicon.jpg" rel="shortcut icon" type="image/jpg">
+	<title>Signup • Infiniti Restaurant</title>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="css/login.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-pic js-tilt" data-tilt>
+					<img src="https://colorlib.com/etc/lf/Login_v1/images/img-01.png" alt="IMG">
+				</div>
+				<form class="login100-form validate-form" th:action="@{/registration}" method="post">
+					<span class="login100-form-title">
+					<h2 th:text="${message}" style="color:rgb(75,181,67)"></h2>
+					<h2 style="color:rgb(3,162,213)">Infiniti Restaurant</h2>
+						
+					</span>
+
+					<div class="wrap-input100">
+						<input class="input100" type="text" name="name" placeholder="Username">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100">
+						<input class="input100" type="password" name="pass" placeholder="Password">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+					
+					<div class="wrap-input100">
+						<input class="input100" type="text" name="secret" placeholder="Secret Code">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+						<small class="form-text text-muted text-center">Admin Secret Code</small>
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn" type="submit">
+							Sign up
+						</button>
+					</div>
+
+					<div class="text-center p-t-136">
+						<a class="txt2" href="index">
+							Go Home
+							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+						</a>&nbsp;
+						<a class="txt2" href="login">
+							Sign in your Account
+							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
