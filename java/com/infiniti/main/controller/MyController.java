@@ -71,7 +71,7 @@ public class MyController {
 			model.addAttribute("message", "Username already exists");
 			return "adminsignup";
 		}
-		else if(admin.getSecret().compareTo("123")==0)
+		else if(admin.getSecret().compareTo("some random string here")==0)
 		{
 			admin.setRole("ROLE_ADMIN");
 			admin.setEnabled(true);
